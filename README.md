@@ -1,44 +1,46 @@
 # API de Registro de Usuarios
 
-## Instalación y Uso
+## Description
+This is a register user API with field validations, email verifiaction, password validation, with JWT and Jest Testing.
 
-1. Clona el repositorio:
+## How to use
+
+1. Clone the repo:
     ```bash
     git clone <repositorio_url>
     ```
-2. Navega a la carpeta del proyecto:
+2. Change directory:
     ```bash
     cd my-api
     ```
-3. Instala las dependencias:
+3. Install dependencies:
     ```bash
     npm install
     ```
-4. Configura las variables de entorno:
-    Crea un archivo `.env` en la raíz del proyecto y añade:
+4. Set up your .env file:
     ```plaintext
     JWT_SECRET=your_secret_key
-    PORT=3000
+    PORT=3500
     ```
 
-## Uso
+## Start the app
 
-1. Inicia el servidor:
+1. Start the server:
     ```bash
-    npm start
+    npm run start:dev
     ```
 
-2. La API estará disponible en `http://localhost:3000/api`.
+2. API will be available at `http://localhost:3500/api`.
 
 ## Endpoints
 
-### Registro de Usuario
+### User register
 
-**URL**: `/api/register`
+**URL**: `/api/user/register`
 
-**Método**: `POST`
+**Method**: `POST`
 
-**Datos de Entrada**:
+**Data**:
 ```json
 {
     "name": "Juan Rodriguez",
@@ -54,8 +56,16 @@
 }
 ```
 
-## Pruebas
-1. Correr comando:
+### Get all users (this is a protected route)
+
+**URL**: `/api/user/all`
+
+**Method**: `GET`
+
+**Headers** `Authorization Bearer <token>`
+
+## Testing
+1. Run command:
     ```bash
     npm test
     ```
