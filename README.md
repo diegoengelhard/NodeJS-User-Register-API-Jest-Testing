@@ -19,8 +19,9 @@ This is a register user API with field validations, email verifiaction, password
     ```
 4. Set up your .env file:
     ```plaintext
-    JWT_SECRET=your_secret_key
-    PORT=3500
+    DB_PORT=your_port # e.g. 3000
+    TOKEN_SECRET=your_secret_key # e.g. secret
+    TOKEN_EXPIRATION=your_token_expiration # e.g. 1d
     ```
 
 ## Start the app
