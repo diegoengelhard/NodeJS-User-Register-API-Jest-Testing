@@ -46,7 +46,7 @@ This is a register user API with field validations, email verifiaction, password
 {
     "name": "Juan Rodriguez",
     "email": "juan@rodriguez.org",
-    "password": "hunter2",
+    "password": "@User12345",
     "phones": [
         {
             "number": "1234567",
