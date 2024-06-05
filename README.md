@@ -11,7 +11,7 @@ This is a register user API with field validations, email verifiaction, password
     ```
 2. Change directory:
     ```bash
-    cd my-api
+    cd user-api
     ```
 3. Install dependencies:
     ```bash
