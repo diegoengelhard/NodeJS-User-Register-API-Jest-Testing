@@ -1,4 +1,4 @@
-# API de Registro de Usuarios
+# Register Users API + Jest Testing
 
 ## Description
 This is a register user API with field validations, email verifiaction, password validation, with JWT and Jest Testing.
@@ -7,7 +7,7 @@ This is a register user API with field validations, email verifiaction, password
 
 1. Clone the repo:
     ```bash
-    git clone <repositorio_url>
+    git clone <repo_url>
     ```
 2. Change directory:
     ```bash
